@@ -29,7 +29,7 @@
 
         </RelativeLayout>
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_chat"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -41,12 +41,12 @@
             android:background="@mipmap/main_bottom_bg"
             android:gravity="bottom">
 
-            <android.support.constraint.ConstraintLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/rl_button"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dialogue_inner_height">
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/cl_left"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -146,10 +146,10 @@
                     </RelativeLayout>
 
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-                <android.support.constraint.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/cl_right"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -213,10 +213,10 @@
                     </RelativeLayout>
 
 
-                </android.support.constraint.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            </android.support.constraint.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </RelativeLayout>
 

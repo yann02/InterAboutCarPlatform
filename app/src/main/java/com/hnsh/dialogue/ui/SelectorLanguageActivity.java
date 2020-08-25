@@ -2,13 +2,12 @@ package com.hnsh.dialogue.ui;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -17,20 +16,17 @@ import com.dosmono.logger.Logger;
 import com.dosmono.universal.entity.flag.Flag;
 import com.dosmono.universal.entity.language.Language;
 import com.dosmono.universal.utils.ConfigUtils;
-import com.hnsh.dialogue.LanguageListActivity;
 import com.hnsh.dialogue.R;
 import com.hnsh.dialogue.adapter.LanguageAdapter;
 import com.hnsh.dialogue.bean.LanguageInfo;
-import com.hnsh.dialogue.utils.AppScreenMgr;
-import com.hnsh.dialogue.utils.GlideUtil;
 import com.hnsh.dialogue.views.MyItemClickListener;
 import com.jaeger.library.StatusBarUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.support.design.widget.BottomSheetBehavior.STATE_COLLAPSED;
-import static android.support.design.widget.BottomSheetBehavior.STATE_HIDDEN;
+import static com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_COLLAPSED;
+import static com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_HIDDEN;
 
 public class SelectorLanguageActivity extends AppCompatActivity {
     public static final String LANGUAGE = "language";

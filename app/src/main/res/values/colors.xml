@@ -21,4 +21,6 @@
     <color name="orange">#fc5b03</color>
     <color name="nav_title">#99CFFF</color>
     <color name="menu_text_color">#99CFFF</color>
+    <color name="overlay_dark_50">#40000000</color>
+    <color name="material_blue">#6452f0</color>
 </resources>

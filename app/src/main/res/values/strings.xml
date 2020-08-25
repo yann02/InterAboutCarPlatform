@@ -32,4 +32,6 @@
     <string name="temp_time">14:36</string>
     <string name="weekday">星期五</string>
     <string name="date">2020年8月14日</string>
+    <string name="error_message">发生了一些错误</string>
+    <string name="empty_message">没有数据哎~</string>
 </resources>

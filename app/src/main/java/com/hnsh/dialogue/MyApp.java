@@ -2,16 +2,14 @@ package com.hnsh.dialogue;
 
 import android.app.Application;
 import android.content.Context;
-import android.os.Build;
-import android.support.multidex.MultiDex;
-import android.util.Log;
+
+import androidx.multidex.MultiDex;
 
 import com.dosmono.library.iflytek.Iflytek;
 import com.dosmono.logger.Logger;
 import com.dosmono.universal.app.DeviceInfo;
 import com.dosmono.universal.app.Framework;
 import com.dosmono.universal.common.Constant;
-import com.hnsh.dialogue.utils.CommonUtil;
 import com.hnsh.dialogue.utils.UIUtils;
 import com.hnsh.dialogue.utils.UUIDUtils;
 

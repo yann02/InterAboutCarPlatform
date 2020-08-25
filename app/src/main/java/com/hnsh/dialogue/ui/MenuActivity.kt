@@ -5,8 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
-import android.support.constraint.ConstraintLayout
-import android.support.v7.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
 import com.dosmono.logger.Logger
 import com.hnsh.dialogue.MainActivity
@@ -38,9 +38,9 @@ class MenuActivity : AppCompatActivity() {
     }
 
     var mHandler = object : Handler() {
-        override fun handleMessage(msg: Message?) {
+        override fun handleMessage(msg: Message) {
             super.handleMessage(msg)
-            when (msg?.what) {
+            when (msg.what) {
                 MSG_KEY -> {
                     val time = DateUtil.getInstance().time
                     val times = time.split(",")

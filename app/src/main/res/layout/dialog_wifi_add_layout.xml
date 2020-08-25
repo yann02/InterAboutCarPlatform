@@ -72,7 +72,7 @@
             android:textColor="@color/text_set_content"
             android:textSize="@dimen/biz_text_size_24px"/>
 
-        <android.support.v7.widget.AppCompatSpinner
+        <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/et_wifi_add_safety"
             android:layout_width="@dimen/biz_wifi_add_dialog_edit_text_width"
             android:layout_height="@dimen/biz_wifi_add_dialog_edit_text_height"

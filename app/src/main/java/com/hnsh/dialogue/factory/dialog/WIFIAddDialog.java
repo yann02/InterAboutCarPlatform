@@ -2,7 +2,7 @@ package com.hnsh.dialogue.factory.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.support.v7.widget.AppCompatSpinner;
+import androidx.appcompat.widget.AppCompatSpinner;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;

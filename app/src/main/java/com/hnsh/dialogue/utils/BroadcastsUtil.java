@@ -3,7 +3,7 @@ package com.hnsh.dialogue.utils;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.dosmono.logger.Logger;
 import com.dosmono.universal.common.Constant;

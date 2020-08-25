@@ -14,7 +14,7 @@
         android:background="@android:color/holo_blue_dark"
         android:layout_marginTop="-2px"
         android:orientation="vertical">
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rc_common_phrase_category"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -57,7 +57,7 @@
 
 
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rl_common_phrase_content"
         android:layout_width="0dp"
         android:layout_height="match_parent"

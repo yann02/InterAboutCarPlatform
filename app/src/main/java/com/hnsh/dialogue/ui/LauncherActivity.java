@@ -2,9 +2,10 @@ package com.hnsh.dialogue.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.hnsh.dialogue.R;
+import com.hnsh.dialogue.jet.main.view.MenuDataActivity;
 import com.jaeger.library.StatusBarUtil;
 
 public class LauncherActivity extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class LauncherActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(1000);//使程序休眠一秒
-                    Intent it = new Intent(getApplicationContext(), MenuActivity.class);
+                    Intent it = new Intent(getApplicationContext(), MenuDataActivity.class);
                     startActivity(it);
                     finish();//关闭当前活动
                 } catch (Exception e) {

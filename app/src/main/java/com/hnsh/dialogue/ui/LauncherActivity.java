@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hnsh.dialogue.R;
-import com.hnsh.dialogue.jet.main.view.MenuDataActivity;
+import com.hnsh.dialogue.jet.modules.home.view.HomeActivity;
 import com.jaeger.library.StatusBarUtil;
 
 public class LauncherActivity extends AppCompatActivity {
@@ -24,7 +24,7 @@ public class LauncherActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(1000);//使程序休眠一秒
-                    Intent it = new Intent(getApplicationContext(), MenuDataActivity.class);
+                    Intent it = new Intent(getApplicationContext(), HomeActivity.class);
                     startActivity(it);
                     finish();//关闭当前活动
                 } catch (Exception e) {

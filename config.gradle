@@ -24,6 +24,7 @@ ext {
     pgyersdk_version = '3.0.10'
     work_version = '2.3.4'
     permission_version = '1.3.0'
+    oneBottomNavigationBar_version = '1.2.2'
 
     versions = [
             fastjson_version : "1.2.62",
@@ -55,6 +56,7 @@ ext {
             "agentweb"                : "com.just.agentweb:agentweb:$agentweb_version",
             "pgyer_sdk"               : "com.pgyersdk:sdk:$pgyersdk_version",
             "wrok_manager"            : "androidx.work:work-runtime-ktx:$work_version",
+            "OneBottomNavigationBar"  : "com.github.onestravel:OneBottomNavigationBar:$oneBottomNavigationBar_version",
             "permissionx"             : "com.permissionx.guolindev:permissionx:$permission_version"
     ]
 }

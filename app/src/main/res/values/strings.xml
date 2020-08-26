@@ -34,4 +34,13 @@
     <string name="date">2020年8月14日</string>
     <string name="error_message">发生了一些错误</string>
     <string name="empty_message">没有数据哎~</string>
+    <string name="home">首页</string>
+    <string name="study">学习</string>
+    <string name="test">评测</string>
+    <string name="mine">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_mine_fragment">Hello mine fragment</string>
+    <string name="dialogue">对话翻译</string>
 </resources>

@@ -25,9 +25,9 @@ fun <T : BaseRepository> BaseViewModel<T>.initiateRequest(
     viewModelScope.launch {
         runCatching {
             block()
-            Log.d("wyy", "success")
+            Log.d("wyy", "runCatching")
         }.onSuccess {
-            Log.d("wyy", "success1")
+            Log.d("wyy", "onSuccess:")
         }.onFailure {
             it.printStackTrace()
             Log.d("wyy", "fail:${it.message}")

@@ -13,7 +13,7 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
-        android:name=".MyApp"
+        android:name=".jet.common.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon_logo"
         android:label="${APP_NAME}"
@@ -47,7 +47,7 @@
             android:name=".ui.UnfCommonPhraseActivity"
             android:configChanges="locale|layoutDirection"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".jet.main.view.MenuDataActivity"/>
+        <activity android:name="com.hnsh.dialogue.jet.modules.home.view.HomeActivity"/>
     </application>
 
 </manifest>

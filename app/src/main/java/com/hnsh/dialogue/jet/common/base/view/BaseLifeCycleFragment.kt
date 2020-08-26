@@ -9,8 +9,10 @@ import com.hnsh.dialogue.jet.common.base.viewmodels.BaseViewModel
 import com.hnsh.dialogue.jet.common.callback.EmptyCallBack
 import com.hnsh.dialogue.jet.common.callback.ErrorCallBack
 import com.hnsh.dialogue.jet.common.callback.LoadingCallBack
+import com.hnsh.dialogue.jet.common.getAppViewModel
 import com.hnsh.dialogue.jet.common.state.State
 import com.hnsh.dialogue.jet.common.state.StateType
+import com.hnsh.dialogue.jet.modules.app.AppViewModel
 
 /**
  * Created with Android Studio.
@@ -20,7 +22,7 @@ import com.hnsh.dialogue.jet.common.state.StateType
  */
 abstract class BaseLifeCycleFragment<VM : BaseViewModel<*>, DB : ViewDataBinding> :
     BaseFragment<VM, DB>() {
-//    val appViewModel: AppViewModel by lazy { getAppViewModel() }
+    val appViewModel: AppViewModel by lazy { getAppViewModel() }
 
     override fun initView() {
         showLoading()

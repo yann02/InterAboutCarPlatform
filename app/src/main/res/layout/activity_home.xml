@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <!--        <variable-->
+        <!--            name="content"-->
+        <!--            type="com.hnsh.dialogue.jet.common.base.models.HttpBaseBean" />-->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_content"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@{content.bodyContent}"-->
+        <!--            tools:text="好人啊"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <FrameLayout
+            android:id="@+id/mainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            />
+
+        <com.hnsh.dialogue.jet.modules.home.view.OneBottomNavigationBar
+            android:id="@+id/oneBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_navigation"
+            app:oneFloatingEnable="true"
+            app:oneFloatingUp="20dp"
+            app:oneFloatingPadding="3dp"
+            app:oneItemPadding="3dp"
+            app:oneItemTextTopMargin="5dp"
+            app:oneMenu="@menu/navigation_menu"
+            app:oneItemTopLineColor="#cccccc" />
+
+    </LinearLayout>
+</layout>

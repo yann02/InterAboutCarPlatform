@@ -6,7 +6,7 @@ import com.hnsh.dialogue.R
 /**
  * Created with Android Studio.
  * Description:
- * @author: 王拣贤
+ * @author: yingyan wu
  * @date: 2020/06/03
  * Time: 14:37
  */

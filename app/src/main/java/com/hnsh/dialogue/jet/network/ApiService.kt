@@ -15,4 +15,9 @@ interface ApiService {
     @FormUrlEncoded
     @POST(Constants.URL_MAIN_MENU_DATA)
     suspend fun searchPlaces(@FieldMap params: Map<String, Any>): HttpBaseBean
+
+    @JvmSuppressWildcards
+    @FormUrlEncoded
+    @POST(Constants.URL_GET_APK_INFO)
+    suspend fun getApkInfo(@FieldMap params: Map<String, Any>): HttpBaseBean
 }

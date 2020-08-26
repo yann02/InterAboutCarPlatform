@@ -1,8 +1,10 @@
-package com.hnsh.dialogue.jet.main.repository
+package com.hnsh.dialogue.jet.modules.home.repository
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.dosmono.universal.utils.MD5.md5
+import com.hnsh.dialogue.BuildConfig
+import com.hnsh.dialogue.factory.DmonkeyParamFactory
 import com.hnsh.dialogue.jet.common.base.models.HttpBaseBean
 import com.hnsh.dialogue.jet.common.base.repositorys.ApiRepository
 import com.hnsh.dialogue.jet.common.state.State
@@ -15,7 +17,7 @@ import java.util.*
  * @author: wyy
  * @CreateDate: 2020/6/6 10:43
  */
-class SearchPlaceRepository(var loadState: MutableLiveData<State>) : ApiRepository() {
+class HomeRepository(var loadState: MutableLiveData<State>) : ApiRepository() {
     suspend fun searchPlaces(): HttpBaseBean {
         val mapParam: MutableMap<String, Any> = LinkedHashMap()
         val salt = System.currentTimeMillis()
@@ -29,5 +31,14 @@ class SearchPlaceRepository(var loadState: MutableLiveData<State>) : ApiReposito
             Log.d("wyy", "item.${item.key}=${item.value}")
         }
         return apiService.searchPlaces(mapParam)
+    }
+
+    /**
+     * 获取apk信息
+     */
+    suspend fun getApkInfo(): HttpBaseBean {
+        val appId = BuildConfig.APPLICATION_ID
+        val targetMap = mapOf("com" to appId)
+        return apiService.getApkInfo(DmonkeyParamFactory.parameters(targetMap))
     }
 }

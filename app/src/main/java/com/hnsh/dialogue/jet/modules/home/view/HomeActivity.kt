@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import com.hnsh.dialogue.BuildConfig
 import com.hnsh.dialogue.R
 import com.hnsh.dialogue.databinding.ActivityHomeBinding
 import com.hnsh.dialogue.jet.common.base.view.BaseLifeCycleActivity

@@ -1,14 +1,4 @@
 ext {
-
-    android = [
-            compileSdkVersion: 29,
-            buildToolsVersion: "29.0.3",
-            minSdkVersion    : 26,
-            targetSdkVersion : 29,
-            versionCode      : 1,
-            versionName      : "1.0.2",
-    ]
-
     coroutines_version = '1.3.2'
     retrofit_version = '2.6.2'
     okhttp_version = '3.4.1'
@@ -25,11 +15,6 @@ ext {
     work_version = '2.3.4'
     permission_version = '1.3.0'
     oneBottomNavigationBar_version = '1.2.2'
-
-    versions = [
-            fastjson_version : "1.2.62",
-            universal_version: "2.0.4_beta01",
-    ]
 
     dependencies = [
             "recyclerview"            : "com.android.support:recyclerview-v7:29.0.0",

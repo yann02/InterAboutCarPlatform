@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 def support = rootProject.ext.dependencies
-def versions = rootProject.ext.versions
 android {
     signingConfigs {
         release {
@@ -63,6 +62,15 @@ android {
         taxi {
             applicationIdSuffix ".taxi"
             manifestPlaceholders = [APP_NAME: "一路通"]
+        }
+    }
+
+    //修改生成的apk名字
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name.equals('release')) {
+                outputFileName = 'dialogue' + '-V' + defaultConfig.versionName + '-' + variant.productFlavors[0].name + '-release' + '.apk'
+            }
         }
     }
 

@@ -33,9 +33,6 @@ android {
         debug {
             // 配置retrofit baseUrl
             buildConfigField("String", "BASE_URL", "\"http://www.sh.dmonkey.cn/shuanghou/\"")
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
         }
     }
 
